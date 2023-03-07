@@ -6,21 +6,26 @@
 }
 
 header {
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
     background-color:#33334d;
     box-shadow: 10px 5px 10px 8px #400080;
+}
+
+nav {
+    margin-left: 750px;
 }
 
 ul {
     display: flex;
     align-items:center;
     justify-content: center;
-    /* padding: 10px; */
     list-style: none;
 }
 
 li {
-    /* margin: 0 40px; */
     padding: 20px 20px;
     font-family: 'Roboto Mono', monospace;
     font-size: 22px;
@@ -33,15 +38,26 @@ li:hover{
     cursor:pointer;
 }
 
+h1 {
+    color: var(--text-color);
+    margin-top: 30px;
+}
+
 main {
     background-image: url('../../assets/background2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
-    opacity: 0.9;
+    max-width: 100vw;
+    opacity: 0.85;
 }
 
+.estructure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .presentation {
     display: flex;
     justify-content: center;
@@ -52,29 +68,21 @@ main {
 
 .name {
     font-family: 'Roboto Mono', monospace;
-    font-size: 60px;
-    color:rgb(235, 235, 235);
-    margin: 20px 0 0 0;
+    font-size: 80px;
+    color: var(--text-color);
+    margin: 50px 0 0 0;
 }
-
-.name:hover {
-    color: #e161e1;
-}
-
+    
 .presentation span{
     color: rgb(235, 235, 235);
     font-family: 'Roboto Mono', monospace;
     padding: 10px 0;
-    font-size: 15px;
+    font-size: 32px;
     margin-top: 10px;
 }
 
-.presentation span:hover {
-    color:#e161e1;
-}
-
 .presentation img {
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
     border: 10px groove #800080;
     margin-top: 10px;
@@ -82,7 +90,26 @@ main {
 
 .presentation img:hover {
     opacity: 0.9;
-    width: 250px;
+    width: 320px;
 }
+
+.language img {
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    text-align: center;    
+    font-size: 24px;
+}
+.text-presentation {
+    margin-top: 15px;
+    line-height: 45px;
+    z-index: 1;
+}
+
 
 
