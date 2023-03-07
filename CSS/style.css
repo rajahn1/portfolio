@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+@import url(colors.css);
 
 header {
     display: flex;
@@ -18,7 +19,7 @@ nav {
     margin-left: 750px;
 }
 
-ul {
+.header-list {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -29,10 +30,10 @@ li {
     padding: 20px 20px;
     font-family: 'Roboto Mono', monospace;
     font-size: 22px;
-    color: #ffffe6;
+    color: var(--text-color);
 }
 
-li:hover{
+.header-li:hover{
     color:rgb(26, 26, 26);
     background-color: whitesmoke;
     cursor:pointer;
@@ -40,11 +41,14 @@ li:hover{
 
 h1 {
     color: var(--text-color);
-    margin-top: 30px;
+    background-color: var(--bg-text);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 55px;
 }
 
 main {
-    background-image: url('../../assets/background2.jpg');
+    background-image: url('../assets/background-3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -68,24 +72,29 @@ main {
 
 .name {
     font-family: 'Roboto Mono', monospace;
-    font-size: 80px;
+    font-size: 55px;
     color: var(--text-color);
     margin: 50px 0 0 0;
+    
 }
     
 .presentation span{
-    color: rgb(235, 235, 235);
+    color: var(--text-color);
     font-family: 'Roboto Mono', monospace;
-    padding: 10px 0;
-    font-size: 32px;
-    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 26px;
+    margin-top: 30px;
+    background-color: var(--bg-text);
+    border-radius: 10px;
+    
+
 }
 
 .presentation img {
     width: 300px;
     border-radius: 50%;
-    border: 10px groove #800080;
-    margin-top: 10px;
+    border: 10px groove #5c00e6;
+    margin-top: 80px;
 }
 
 .presentation img:hover {
@@ -101,14 +110,51 @@ main {
 
 p {
     font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
+    color: var(--text-color);
     text-align: center;    
-    font-size: 24px;
+    font-size: 22px;
+    background-color: var(--bg-text);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 .text-presentation {
-    margin-top: 15px;
+    margin-top: 80px;
     line-height: 45px;
     z-index: 1;
+}
+
+.about-me-title {
+    margin-top: 100px
+}
+
+.list-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-image: url('../assets/icon-list.png');
+
+    margin-top: 50px;
+}
+
+.list-about-me .item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-text);
+    width: 45vw;
+}
+
+.list-about-me img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.list-icon {
+    margin-right: 10px;
 }
 
 
